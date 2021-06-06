@@ -1,0 +1,13 @@
+.portfolio-img-box {
+    width: 25%;
+    color: red;
+    height: 17.25rem;
+    background-color: #EFEFEF;
+}
+.portfolio-img-box:not(:last-child) {
+    margin-right: 1.5rem;
+}
+
+.portfolio-img {
+    
+}

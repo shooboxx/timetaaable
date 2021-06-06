@@ -1,0 +1,63 @@
+.empty {
+    color: map-get($ui-colors, gray-60 );
+    font-size: 1.25em;
+
+}
+
+.error-alert {
+    color: map-get($ui-colors , 'warning-default' );
+    margin: -1em 0;
+    font-size: 0.875em;
+}
+
+.heading {
+    color: map-get($ui-colors, gray-100 );
+    font-weight: 600;
+
+    &-1 {
+        font-size: 3.125em;
+        margin-bottom: 1em;
+    }
+
+    &-2 {
+        font-size: 2.1875em; 
+        margin-bottom: 1em;
+        color: map-get($primary-colors, default); 
+
+    }
+    &-3 {
+        font-size: 1.625em;
+
+    }
+    &-4 {
+        font-size: 1.25em;
+    }
+}
+.body {
+    color: map-get($ui-colors, gray-80 );
+    margin-bottom: 1em;
+
+    &-big {
+        font-size: 1em;
+    }
+    &-small {
+        font-size: 0.875em;
+    }
+}
+
+
+.label {
+    color: map-get($ui-colors, gray-100 );
+    font-family: 'Poppins';
+    font-weight: 400;
+
+    &-regular {
+        font-size: 1em;
+        letter-spacing: 0.05rem;
+    }
+} 
+
+.link-text a {
+    color: map-get($primary-colors, 'default');
+    font-weight: 600;
+}

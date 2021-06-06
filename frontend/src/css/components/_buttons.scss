@@ -1,0 +1,93 @@
+/******** BUTTON BASE ***********/
+
+.btn {
+    min-width: 100px;
+    padding: 8px 32px;
+    border: 0;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    transition: all .4s ease;
+    margin-top: 8px;
+    font-family: 'Poppins';
+    cursor: pointer;
+    text-align: center;
+    text-transform: uppercase;
+
+    &-form {
+        width: 100%;
+    }
+    &:focus{
+        outline: none;
+    }
+    &:hover {
+        transform: translateY(-3px);
+    }
+
+    &:active{
+        transform: translateY(-1px);
+    }
+/******** PRIMARY BUTTONS ***********/
+ 
+    &-primary {
+        background-color: map-get($primary-colors , default );
+        color: map-get($ui-colors, gray-0 );
+        box-shadow: 0px 6px 20px rgba(9, 191, 156, 0.2);
+    }
+    &-primary:hover {
+        background-color: map-get($primary-colors , light);
+        box-shadow: 0px 2px 4px rgba(58, 58, 58, 0.04), 0px 12px 16px rgba(9, 191, 156, 0.25);
+    }
+    &-primary:active {
+        background-color: map-get($primary-colors, dark);
+        box-shadow: 0px 0px 0px rgba(255, 255, 255, 0.00);
+    }
+
+    &-secondary {
+        background-color: map-get($secondary-colors , default);
+        color: #3A3A3A;
+        box-shadow: 0px 6px 20px rgba(255, 228, 148, 0.2);
+    }
+    &-secondary:hover {
+        background-color: map-get($secondary-colors , light);
+        box-shadow: 0px 2px 4px rgba(58, 58, 58, 0.04), 0px 12px 16px rgba(255, 228, 148, 0.25);
+    }
+    &-secondary:active {
+        background-color: map-get($secondary-colors , dark);
+        box-shadow: 0px 2px 4px rgba(58, 58, 58, 0.04), 0px 12px 16px rgba(255, 228, 148, 0.00);
+    }
+
+
+    /******** COMP BUTTONS ***********/
+    &-comp {
+        background-color: map-get($ui-colors , gray-100);
+        color: #FFFFFF;
+        box-shadow: 0px 6px 20px rgba(58, 58, 58, 0.2);
+    }
+    &-comp:hover {
+        background-color: map-get($ui-colors , gray-80);
+        box-shadow: 0px 2px 4px rgba(58, 58, 58, 0.04), 0px 12px 16px rgba(58, 58, 58, 0.1);
+    }
+    &-comp:active {
+        background-color: #1A1A1A;
+        box-shadow: 0px 2px 4px rgba(58, 58, 58, 0.04), 0px 12px 16px rgba(58, 58, 58, 0.00);
+    }
+
+/******** WARNING BUTTONS ***********/
+    &-warning {
+        background-color: map-get($ui-colors , warning-default);
+        color: #FFFFFF;
+        box-shadow: 0px 6px 20px rgba(255, 70, 70, 0.2)
+    }
+    &-warning:hover {
+        background-color: rgba(255, 70, 70, 0.8);
+        box-shadow: 0px 2px 4px rgba(58, 58, 58, 0.04), 0px 12px 16px rgba(255, 70, 70, 0.25)
+    }
+    &-warning:active {
+        background-color: #DE2E2E;
+        box-shadow: 0px 2px 4px rgba(58, 58, 58, 0.04), 0px 12px 16px rgba(58, 58, 58, 0.00);
+    }
+
+
+}

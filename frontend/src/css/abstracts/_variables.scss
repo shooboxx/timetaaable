@@ -1,0 +1,36 @@
+// COLORS
+
+$primary-colors: (
+    default: #09BF9C,
+    dark: #0CA486,
+    light: #11D7B1,
+    disable: #11D7B1,
+);
+$secondary-colors: (
+    default: #FFE494,
+    dark: #FFD14A,
+    light: #FFF1C9,
+    disable: #fff,
+);
+$ui-colors: (
+    gray-100: #3a3a3a, //           Uses: Headers and titles
+    gray-80: #6D6D6D, //            Uses: Body text
+    gray-60: #A0A0A0,//             Uses:
+    gray-40: #D3D3D3,//             Uses: Borders, placeholders
+    gray-20: #F4F4F4,//             Uses: Some Backgrounds
+    gray-0: #ffffff,//              Uses: Backgrounds, Text      
+    warning-default: #FF4646, //    Uses: 
+    warning-light: #FFDADA, //      Uses: 
+    alert-default: #FFE146, //      Uses: 
+    alert-light: #FFF9DA, //        Uses: 
+    info-default: #46A6FF, //       Uses: 
+    info-light: #DAEDFF, //         Uses: 
+    success-default: #46FF6F, //    Uses: 
+    success-light: #DAFFE2, //      Uses: 
+
+);
+
+
+body {
+    background-color: map-get($ui-colors, gray-0 )
+}

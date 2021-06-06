@@ -1,0 +1,39 @@
+.footer {
+
+    margin-top: 96px;
+
+    &-title {
+        margin-bottom: 0.5em;
+        font-size: 1em;
+        font-weight: 600;
+        color: map-get($ui-colors, gray-100 );
+    }
+    &-container {
+        width: 100%;
+        display: flex;
+        padding: 8px 0;
+    }
+    &-column {
+        width: 15%;
+    }
+    &-items {
+        color: map-get($ui-colors, gray-80);
+        width: 97%;
+        font-size: 0.875em;
+        margin-bottom: 0.25em;
+
+    }
+    &-container:not(:first-child) {
+        font-size: 0.875em;
+        border-top: 1px map-get($ui-colors, gray-40) solid;
+        width: 100%;
+        padding-top: 0.5em;
+    }
+    &-legal {
+        width: 80%;
+        flex-shrink: 0;
+        color: map-get($ui-colors , gray-100 )
+    }
+
+}
+

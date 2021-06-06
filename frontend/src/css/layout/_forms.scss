@@ -1,0 +1,19 @@
+.form {
+    align-content: center;
+    width: 80%;
+}
+.pane-form {
+    margin-left: auto;
+}
+
+@media only screen 
+and (max-device-width: 812px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (orientation: portrait) { 
+    .form {
+        width: 100%;
+    }
+    .pane-form {
+        margin-left: 0;
+    } 
+}
